@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Domotica",
+    "description": "Vuelve tu casa inteligente con nuestros servicios de domótica.",
+    "image": "/media/imagen2.png"
+  },
+  {
+    "id": 2,
+    "name": "Redes y Seguridad",
+    "description": "Mejoramos tu vigilancia.",
+    "image": "/media/imagen2.png"
+  }
+]

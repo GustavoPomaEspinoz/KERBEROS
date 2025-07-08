@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:ital,wght@1,700&display=swap');
+
+:root {
+  --color-primary: #0A1A40;
+  --color-accent: #4BB6F0;
+  --color-white: #ffffff;
+  --color-text: #1a1a1a;
+
+  font-family: 'Oswald', sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-text);
+}
+
+/* Reset */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+  background-color: var(--color-white);
+}
+
+/* Body general */
+body {
+  background-color: var(--color-white);
+  color: var(--color-text);
+}
+
+/* Títulos fuertes e impactantes */
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Enlaces */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: var(--color-accent);
+}
+
+/* Botones */
+button {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #74d3ff;
+}
+
+/* Contenedor principal */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Inputs (ej. barra de búsqueda) */
+input[type="text"] {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 200px;
+}
