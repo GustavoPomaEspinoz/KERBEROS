@@ -1,7 +1,7 @@
 [
  {
     "type": "image",
-    "src": "/KERBEROS/media/imagen1.png",
+    "src": "/public/media/imagen1.png",
     "alt": "Imagen 1"
   },
   {
@@ -11,7 +11,7 @@
   },
    {
     "type": "video",
-    "src": "/KERBEROS/media/video1.mp4",
+    "src": "/public/media/video1.mp4",
     "alt": "Video 1"
   }
 ]
