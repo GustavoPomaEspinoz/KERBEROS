@@ -1,7 +1,7 @@
 [
- {
+  {
     "type": "image",
-    "src": "/public/media/imagen1.png",
+    "src": "/KERBEROS/media/imagen1.png",
     "alt": "Imagen 1"
   },
   {
@@ -9,9 +9,9 @@
     "src": "https://hikvision-peru.com/wp-content/uploads/2024/01/KIT2_IP_POE_4MP.jpg",
     "alt": "Imagen 2"
   },
-   {
+  {
     "type": "video",
-    "src": "/public/media/video1.mp4",
+    "src": "/KERBEROS/media/video1.mp4",
     "alt": "Video 1"
   }
 ]
