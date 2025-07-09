@@ -1,0 +1,186 @@
+[
+  {
+    "id": 1,
+    "nombre": "Cerraduras electrónicas",
+    "descripcion": "Dispositivos inteligentes para controlar el acceso mediante huella, clave o app.",
+    "marcas_recomendadas": ["Yale", "August", "Samsung", "ZKTeco"],
+    "imagen": "https://www.verisure.pe/sites/pe/files/flmngr/drupal/blog/cerradura-electronica.jpg",
+    "tipo_servicio": "Domótica"
+  },
+  {
+    "id": 2,
+    "nombre": "Enchufes inteligentes",
+    "descripcion": "Permiten controlar dispositivos conectados a distancia o por temporizador.",
+    "marcas_recomendadas": ["Sonoff", "Tuya", "TP-Link", "Xiaomi"],
+    "imagen": "https://i.blogs.es/a89f08/enchufe-inteligente/650_1200.jpg",
+    "tipo_servicio": "Domótica"
+  },
+  {
+    "id": 3,
+    "nombre": "Timbres inteligentes",
+    "descripcion": "Permiten ver y hablar con quien toca la puerta desde tu celular.",
+    "marcas_recomendadas": ["Ring", "Nexxt", "Tuya", "Ezviz"],
+    "imagen": "https://nexxt-connectivity-frontend.s3.amazonaws.com/media/img/nhc-d100_bn_ca_02_esp.jpg",
+    "tipo_servicio": "Domótica"
+  },
+  {
+    "id": 4,
+    "nombre": "Integración con asistentes de voz",
+    "descripcion": "Controla tus dispositivos mediante Google Assistant o Alexa.",
+    "marcas_recomendadas": ["Google", "Amazon", "Apple", "Tuya"],
+    "imagen": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2020/12/11/5fd364793279c.png",
+    "tipo_servicio": "Domótica"
+  },
+  {
+    "id": 5,
+    "nombre": "Cortinas automatizadas",
+    "descripcion": "Sistema motorizado para abrir y cerrar cortinas por control remoto.",
+    "marcas_recomendadas": ["Tuya", "Somfy", "Xiaomi", "A-OK"],
+    "imagen": "https://sophiestore.pe/wp-content/uploads/2024/11/riel-motorizado-hotelero.jpg",
+    "tipo_servicio": "Domótica"
+  },
+  {
+    "id": 6,
+    "nombre": "Puertas automáticas",
+    "descripcion": "Motores automatizados para apertura de puertas de cochera o acceso.",
+    "marcas_recomendadas": ["Somfy", "LiftMaster", "Nice", "FAAC"],
+    "imagen": "https://www.windowo.es/data/prod/img/kit-installazione-motore-per-garage-automatico-gdk-700-somfy-3.jpg",
+    "tipo_servicio": "Domótica"
+  },
+  {
+    "id": 7,
+    "nombre": "Cámaras IP",
+    "descripcion": "Videovigilancia con visualización remota y grabación en red.",
+    "marcas_recomendadas": ["Hikvision", "Dahua", "Ezviz", "Tuya"],
+    "imagen": "https://www.ruvaseguridad.com/blog/imgs/por-que-usar-camaras-ip.jpg",
+    "tipo_servicio": "Videovigilancia"
+  },
+  {
+    "id": 8,
+    "nombre": "Cámaras motorizadas (PTZ)",
+    "descripcion": "Permiten rotación 360°, inclinación y zoom remoto.",
+    "marcas_recomendadas": ["Hikvision", "Dahua", "Imou", "Ezviz"],
+    "imagen": "https://www.controltech.com.pe/wp-content/uploads/2022/11/Sin-titulo-1-236.png",
+    "tipo_servicio": "Videovigilancia"
+  },
+  {
+    "id": 9,
+    "nombre": "Cámaras ocultas",
+    "descripcion": "Discreción para vigilancia sin llamar la atención.",
+    "marcas_recomendadas": ["MiniCam", "König", "Tuya", "Ezviz"],
+    "imagen": "https://storage.googleapis.com/catalog-pictures-carrefour-es/catalog/pictures/hd_510x_/0764949996502_1.jpg",
+    "tipo_servicio": "Videovigilancia"
+  },
+  {
+    "id": 10,
+    "nombre": "Cámaras térmicas",
+    "descripcion": "Capturan imágenes basadas en la temperatura corporal o ambiental.",
+    "marcas_recomendadas": ["Hikvision", "FLIR", "Dahua", "Axis"],
+    "imagen": "https://securitasmedia.com/securitas-epi/Standard%20Block%20Mobile_camara-termica-personas.jpg",
+    "tipo_servicio": "Videovigilancia"
+  },
+  {
+    "id": 11,
+    "nombre": "Cámaras solares",
+    "descripcion": "Dispositivos de videovigilancia con panel solar para ubicaciones sin electricidad.",
+    "marcas_recomendadas": ["Reolink", "Hikvision", "Tuya", "Sricam"],
+    "imagen": "https://dcdn-us.mitiendanube.com/stores/004/841/787/products/89-e10-png-thumb-1280-1280-4a75818b2581692e2c17186283679532-1024-1024.png",
+    "tipo_servicio": "Videovigilancia"
+  },
+  {
+    "id": 12,
+    "nombre": "NVR/DVR",
+    "descripcion": "Grabadores para almacenar videos de cámaras de seguridad en red o analógicas.",
+    "marcas_recomendadas": ["Hikvision", "Dahua", "ZKTeco", "CP Plus"],
+    "imagen": "https://www.cablefax.com/wp-content/uploads/2014/08/shutterstock_90139447.jpg",
+    "tipo_servicio": "Videovigilancia"
+  },
+  {
+    "id": 13,
+    "nombre": "Lectores biométricos",
+    "descripcion": "Dispositivos para control de acceso mediante huella o rostro.",
+    "marcas_recomendadas": ["ZKTeco", "Hikvision", "Anviz", "Suprema"],
+    "imagen": "https://supertec.com.pe/img-apps/productos/LECTOR-BIOMETRICO-DE-HUELLAS-DACTILARES-TA040-2.jpg",
+    "tipo_servicio": "Control de accesos"
+  },
+  {
+    "id": 14,
+    "nombre": "Control por tarjeta RFID",
+    "descripcion": "Sistemas de acceso mediante tarjetas o llaveros de proximidad.",
+    "marcas_recomendadas": ["ZKTeco", "Hikvision", "Dahua", "Suprema"],
+    "imagen": "https://www.segurilatam.com/wp-content/uploads/sites/5/2020/08/control-de-accesos-tarjeta-rfid-900x600.jpg",
+    "tipo_servicio": "Control de accesos"
+  },
+  {
+    "id": 15,
+    "nombre": "Barreras vehiculares automáticas",
+    "descripcion": "Permiten controlar el ingreso y salida de vehículos en zonas restringidas.",
+    "marcas_recomendadas": ["CAME", "Nice", "FAAC", "ZKTeco"],
+    "imagen": "https://www.altaico.es/wp-content/uploads/2024/11/barreras-automaticas-vehiculares.jpg",
+    "tipo_servicio": "Control de accesos"
+  },
+  {
+    "id": 16,
+    "nombre": "Portales detectores de metales",
+    "descripcion": "Sistemas de seguridad física para revisión en accesos a eventos o instituciones.",
+    "marcas_recomendadas": ["CEIA", "Garrett", "ZKTeco", "Rapiscan"],
+    "imagen": "https://www.ceia.net/security/images/applications/bk034-0.jpg",
+    "tipo_servicio": "Control de accesos"
+  },
+  {
+    "id": 17,
+    "nombre": "Videoporteros",
+    "descripcion": "Permiten comunicación visual y auditiva con visitantes desde el interior.",
+    "marcas_recomendadas": ["Hikvision", "Fermax", "Commax", "Aiphone"],
+    "imagen": "https://productosintegra.com/wp-content/uploads/2024/08/prin-1024x1024.jpg",
+    "tipo_servicio": "Control de accesos"
+  },
+  {
+    "id": 18,
+    "nombre": "Control de asistencia",
+    "descripcion": "Sistemas de fichaje para controlar entrada y salida del personal.",
+    "marcas_recomendadas": ["ZKTeco", "Control ID", "Suprema", "Hikvision"],
+    "imagen": "https://http2.mlstatic.com/D_622733-MLA31063351400_062019-O.jpg",
+    "tipo_servicio": "Control de accesos"
+  },
+  {
+    "id": 19,
+    "nombre": "Sensores PIR",
+    "descripcion": "Sensores de movimiento infrarrojo para activar alarmas ante intrusos.",
+    "marcas_recomendadas": ["Paradox", "Hikvision", "DSC", "Visonic"],
+    "imagen": "https://grupocontrol.com/wp-content/uploads/2020/07/FotoDetector.png",
+    "tipo_servicio": "Seguridad electrónica"
+  },
+  {
+    "id": 20,
+    "nombre": "Cercos eléctricos",
+    "descripcion": "Líneas de seguridad perimetrales para evitar ingresos no autorizados.",
+    "marcas_recomendadas": ["Nemtek", "PowerFence", "ZKTeco", "JVA"],
+    "imagen": "https://zonobra.com.pe/wp-content/uploads/2017/12/zonobra-Cercos-el%C3%A9ctricos-imagen-4.jpg",
+    "tipo_servicio": "Seguridad electrónica"
+  },
+  {
+    "id": 21,
+    "nombre": "Alarmas",
+    "descripcion": "Sistemas de alerta ante eventos de intrusión o emergencia.",
+    "marcas_recomendadas": ["DSC", "Paradox", "Hikvision", "Tuya"],
+    "imagen": "https://nes.com.pe/wp-content/uploads/2024/04/KIT-HG-MPR3-220-NES--scaled.jpg",
+    "tipo_servicio": "Seguridad electrónica"
+  },
+  {
+    "id": 22,
+    "nombre": "Servidores NVR empresariales",
+    "descripcion": "Centros de grabación y monitoreo para instalaciones con muchas cámaras.",
+    "marcas_recomendadas": ["Hikvision", "Dahua", "Genetec", "Avigilon"],
+    "imagen": "https://www.genetec.com/binaries/content/gallery/nvr-vs-vms-camera-system.jpg",
+    "tipo_servicio": "Soluciones empresariales"
+  },
+  {
+    "id": 23,
+    "nombre": "Megafonía IP",
+    "descripcion": "Altavoces conectados por red para avisos masivos remotos.",
+    "marcas_recomendadas": ["Axis", "TOA", "Inter-M", "ZKTeco"],
+    "imagen": "https://airvoice.es/wp-content/uploads/megafonia-IP.jpg",
+    "tipo_servicio": "Soluciones empresariales"
+  }
+]

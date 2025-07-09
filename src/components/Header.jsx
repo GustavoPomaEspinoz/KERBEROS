@@ -1,20 +1,34 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logo_kerberos.jpg";
 import { FaSearch } from "react-icons/fa";
 
-// 👉 Estilos independientes (puedes modificar estos)
+// Estilos base
 const logoSize = "70px";
 const brandFontSize = "2.2rem";
 const navLinkFontSize = "1.2rem";
 const searchInputWidth = "200px";
 const searchFontSize = "1.1rem";
 
-const linkStyle = {
-  color: "#0A1A40",
+// Colores
+const primaryColor = "#0A1A40";
+const hoverStyle = {
+  backgroundColor: primaryColor,
+  color: "#fff",
+  border: `2px solid ${primaryColor}`,
+};
+const defaultStyle = {
+  color: primaryColor,
+  backgroundColor: "transparent",
+  border: "2px solid transparent",
+};
+const baseLinkStyle = {
   fontWeight: "bold",
   fontSize: navLinkFontSize,
-  textDecoration: "none",
   fontFamily: "'Oswald', sans-serif",
+  textDecoration: "none",
+  padding: "0.5rem 1rem",
+  borderRadius: "8px",
+  transition: "all 0.3s ease",
 };
 
 export default function Header() {
@@ -52,16 +66,67 @@ export default function Header() {
         </span>
       </div>
 
-      {/* Menú y Búsqueda */}
+      {/* Navegación */}
       <div style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>
-        <nav style={{ display: "flex", gap: "1.2rem" }}>
-          <Link to="/" style={linkStyle}>Inicio</Link>
-          <Link to="/products" style={linkStyle}>Productos</Link>
-          <Link to="/services" style={linkStyle}>Servicios</Link>
-          <Link to="/about" style={linkStyle}>Nosotros</Link>
+        <nav style={{ display: "flex", gap: "1rem" }}>
+          {/* Inicio con end */}
+          <NavLink
+            to="/"
+            end
+            style={({ isActive }) => ({
+              ...baseLinkStyle,
+              ...(isActive ? hoverStyle : defaultStyle),
+            })}
+            onMouseEnter={(e) => {
+              e.target.style.backgroundColor = primaryColor;
+              e.target.style.color = "#fff";
+              e.target.style.border = `2px solid ${primaryColor}`;
+            }}
+            onMouseLeave={(e) => {
+              if (!e.target.classList.contains("active")) {
+                e.target.style.backgroundColor = "transparent";
+                e.target.style.color = primaryColor;
+                e.target.style.border = "2px solid transparent";
+              }
+            }}
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Inicio
+          </NavLink>
+
+          {/* Otros enlaces */}
+          {[
+            { to: "/services", label: "Servicios" },
+            { to: "/products", label: "Productos" },
+            { to: "/about", label: "Nosotros" },
+          ].map(({ to, label }) => (
+            <NavLink
+              key={to}
+              to={to}
+              style={({ isActive }) => ({
+                ...baseLinkStyle,
+                ...(isActive ? hoverStyle : defaultStyle),
+              })}
+              onMouseEnter={(e) => {
+                e.target.style.backgroundColor = primaryColor;
+                e.target.style.color = "#fff";
+                e.target.style.border = `2px solid ${primaryColor}`;
+              }}
+              onMouseLeave={(e) => {
+                if (!e.target.classList.contains("active")) {
+                  e.target.style.backgroundColor = "transparent";
+                  e.target.style.color = primaryColor;
+                  e.target.style.border = "2px solid transparent";
+                }
+              }}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              {label}
+            </NavLink>
+          ))}
         </nav>
 
-        {/* Barra de búsqueda con lupa */}
+        {/* Buscador */}
         <div
           style={{
             display: "flex",
@@ -84,7 +149,13 @@ export default function Header() {
               color: "#0A1A40",
             }}
           />
-          <FaSearch style={{ color: "#0A1A40", fontSize: searchFontSize, marginLeft: "0.5rem" }} />
+          <FaSearch
+            style={{
+              color: "#0A1A40",
+              fontSize: searchFontSize,
+              marginLeft: "0.5rem",
+            }}
+          />
         </div>
       </div>
     </header>
