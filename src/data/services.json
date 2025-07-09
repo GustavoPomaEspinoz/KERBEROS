@@ -1,14 +1,32 @@
 [
   {
     "id": 1,
-    "name": "Domotica",
-    "description": "Vuelve tu casa inteligente con nuestros servicios de domótica.",
-    "image": "/media/imagen2.png"
+    "name": "Domótica Inteligente",
+    "description": "Convierte tu hogar en un espacio inteligente con control total desde tu smartphone. Automatiza luces, cerraduras, sensores y más.",
+    "image": "https://www.muvit.es/img/cms/1%20-%20Blog/Control-dom%C3%B3tico-de-un-hogar-mediante-un-smartphone.jpeg"
   },
   {
     "id": 2,
-    "name": "Redes y Seguridad",
-    "description": "Mejoramos tu vigilancia.",
-    "image": "/media/imagen2.png"
+    "name": "Videovigilancia Profesional",
+    "description": "Instalamos cámaras IP y analógicas de alta definición para una vigilancia 24/7 segura, confiable y adaptada a tus necesidades.",
+    "image": "https://www.seguritecnia.es/wp-content/uploads/2020/12/camara-de-videovigilancia.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Control de Accesos",
+    "description": "Gestiona el ingreso a tu hogar, negocio o empresa con sistemas modernos de huella, tarjetas, reconocimiento facial y más.",
+    "image": "https://www.blindabeep.com/wp-content/uploads/2017/07/shutterstock_582347923.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Seguridad Electrónica Activa",
+    "description": "Protege lo que más importa con alarmas inteligentes, sensores de movimiento y cercos eléctricos integrados a tu sistema.",
+    "image": "https://www.blueplanet-tec.com/wp-content/uploads/2022/01/MAX-1_7.png"
+  },
+  {
+    "id": 5,
+    "name": "Soluciones Empresariales",
+    "description": "Ofrecemos sistemas integrales de videovigilancia, control de accesos y monitoreo para empresas, edificios y comercios.",
+    "image": "https://www.genetec.com/binaries/content/gallery/nvr-vs-vms-camera-system.jpg"
   }
 ]

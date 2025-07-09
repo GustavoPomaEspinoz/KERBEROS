@@ -18,7 +18,7 @@ const arrowStyle = {
   borderRadius: "50%",
   width: "50px",
   height: "50px",
-  zIndex: 10,
+  // zIndex: 10,  👈 esto lo puedes quitar o poner zIndex: 1
   boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
   cursor: "pointer",
 };
