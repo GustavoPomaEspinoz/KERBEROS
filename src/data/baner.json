@@ -13,5 +13,10 @@
     "type": "video",
     "src": "https://gustavopomaespinoz.github.io/KERBEROS/media/video1.mp4",
     "alt": "Video 1"
+  },
+  {
+    "type": "video",
+    "src": "https://gustavopomaespinoz.github.io/KERBEROS/media/video2.mp4",
+    "alt": "Video 2"
   }
 ]

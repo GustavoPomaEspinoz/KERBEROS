@@ -16,46 +16,49 @@ const arrowStyle = {
   backgroundColor: "#0A1A40",
   border: "3px solid #4BB6F0",
   borderRadius: "50%",
-  width: "50px",
-  height: "50px",
-  // zIndex: 10,  👈 esto lo puedes quitar o poner zIndex: 1
+  width: "40px",
+  height: "40px",
+  zIndex: 10,
   boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
   cursor: "pointer",
 };
 
 const iconStyle = {
   color: "#FFFFFF",
-  fontSize: "1.5rem",
+  fontSize: "1.2rem",
 };
 
-// Ocultar íconos por defecto de slick
-const overrideSlickArrow = `
+// Estilos globales para centrar cada slide
+const overrideSlickStyles = `
   .slick-prev::before,
   .slick-next::before {
     content: '' !important;
     display: none !important;
   }
+
+  .slick-slide > div {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
 `;
 
-// Flecha izquierda
 const PrevArrow = ({ className, onClick }) => (
-  <div onClick={onClick} className={className} style={{ ...arrowStyle, left: "-100px" }}>
+  <div onClick={onClick} className={className} style={{ ...arrowStyle, left: "10px" }}>
     <FaChevronLeft style={iconStyle} />
   </div>
 );
 
-// Flecha derecha
 const NextArrow = ({ className, onClick }) => (
-  <div onClick={onClick} className={className} style={{ ...arrowStyle, right: "-100px" }}>
+  <div onClick={onClick} className={className} style={{ ...arrowStyle, right: "10px" }}>
     <FaChevronRight style={iconStyle} />
   </div>
 );
 
 export default function ImageCarousel() {
-  // Inyectar CSS para ocultar ::before de slick
   useEffect(() => {
     const style = document.createElement("style");
-    style.innerHTML = overrideSlickArrow;
+    style.innerHTML = overrideSlickStyles;
     document.head.appendChild(style);
     return () => {
       document.head.removeChild(style);
@@ -67,7 +70,7 @@ export default function ImageCarousel() {
     infinite: true,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 10000, // 10 segundos
+    autoplaySpeed: 10000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
@@ -76,7 +79,16 @@ export default function ImageCarousel() {
   };
 
   return (
-    <div style={{ maxWidth: "900px", margin: "0 auto", padding: "2rem 0", position: "relative" }}>
+    <div
+      style={{
+        maxWidth: "1700px", // ancho máximo del carrusel
+        width: "100%",
+        margin: "0 auto",
+        overflow: "hidden",
+        position: "relative",
+        padding: "1rem 0 3rem 0",
+      }}
+    >
       <Slider {...settings}>
         {items.map((item, index) => (
           <div key={index}>
@@ -84,7 +96,15 @@ export default function ImageCarousel() {
               <img
                 src={item.src}
                 alt={item.alt || `imagen-${index}`}
-                style={{ width: "100%", height: "auto", borderRadius: "12px" }}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxHeight: "550px", // alto maximo
+                  objectFit: "cover",
+                  borderRadius: "12px",
+                  display: "block",
+                  margin: "0 auto",
+                }}
               />
             ) : (
               <video
@@ -93,7 +113,15 @@ export default function ImageCarousel() {
                 muted
                 playsInline
                 loop
-                style={{ width: "100%", height: "auto", borderRadius: "12px" }}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxHeight: "550px",// alto máximo
+                  objectFit: "cover",
+                  borderRadius: "12px",
+                  display: "block",
+                  margin: "0 auto",
+                }}
               />
             )}
           </div>
