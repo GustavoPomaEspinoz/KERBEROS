@@ -182,5 +182,13 @@
     "marcas_recomendadas": ["Axis", "TOA", "Inter-M", "ZKTeco"],
     "imagen": "https://airvoice.es/wp-content/uploads/megafonia-IP.jpg",
     "tipo_servicio": "Soluciones empresariales"
+  },
+  {
+    "id": 24,
+    "nombre": "Mantenimiento de sistemas",
+    "descripcion": "Altavoces conectados por red para avisos masivos remotos.",
+    "marcas_recomendadas": ["Axis", "TOA", "Inter-M", "ZKTeco"],
+    "imagen": "https://servicams.com.mx/img/servicios/image-4.jpg",
+    "tipo_servicio": "Mantenimiento integral"
   }
 ]

@@ -17,10 +17,10 @@ export default function Services() {
     };
   });
 
-  // Si se selecciona un tipo, filtrar todas sus categorías
+  // Mostrar todas las categorías si no se ha seleccionado ningún tipo
   const categoriasFiltradas = selectedTipo
     ? categories.filter(cat => cat.tipo_servicio === selectedTipo)
-    : [];
+    : categories;
 
   return (
     <div style={{ padding: "2rem" }}>
@@ -35,7 +35,7 @@ export default function Services() {
         Nuestros Servicios
       </h1>
 
-      {/* Mostrar botones de tipo de servicio con una imagen de referencia */}
+      {/* Botones circulares de tipos */}
       <div
         style={{
           display: "flex",
@@ -49,52 +49,86 @@ export default function Services() {
           <div
             key={cat.id}
             onClick={() => setSelectedTipo(cat.tipo_servicio)}
-            style={{ cursor: "pointer" }}
+            style={{
+              cursor: "pointer",
+              width: "200px",
+              height: "200px",
+              borderRadius: "50%",
+              overflow: "hidden",
+              boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+              position: "relative",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundColor: "#fff",
+              transition: "transform 0.3s",
+            }}
           >
-            <CategoryCard
-              nombre={cat.tipo_servicio}
-              descripcion={cat.descripcion}
-              imagen={cat.imagen}
-              marcas={[]} // No mostrar marcas en la vista de tipo
+            <img
+              src={cat.imagen}
+              alt={cat.tipo_servicio}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                position: "absolute",
+                top: 0,
+                left: 0,
+                zIndex: 0,
+                opacity: 0.6,
+              }}
             />
+            <div
+              style={{
+                zIndex: 1,
+                color: "#0A1A40",
+                fontWeight: "bold",
+                fontSize: "1rem",
+                fontFamily: "'Oswald', sans-serif",
+                backgroundColor: "rgba(255,255,255,0.85)",
+                padding: "0.5rem 1rem",
+                borderRadius: "10px",
+                textAlign: "center",
+              }}
+            >
+              {cat.tipo_servicio}
+            </div>
           </div>
         ))}
       </div>
 
-      {/* Si se seleccionó un tipo, mostrar todas sus categorías */}
-      {selectedTipo && (
-        <>
-          <h2
-            style={{
-              fontFamily: "'Oswald', sans-serif",
-              color: "#0A1A40",
-              textAlign: "center",
-              marginTop: "3rem",
-            }}
-          >
-            Categorías de: {selectedTipo}
-          </h2>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "center",
-              gap: "2rem",
-              marginTop: "1.5rem",
-            }}
-          >
-            {categoriasFiltradas.map(cat => (
-              <CategoryCard
-                key={cat.id}
-                nombre={cat.nombre}
-                descripcion={cat.descripcion}
-                imagen={cat.imagen}
-                marcas={cat.marcas_recomendadas}
-              />
-            ))}
-          </div>
-        </>
-      )}
+      {/* Título dinámico */}
+      <h2
+        style={{
+          fontFamily: "'Oswald', sans-serif",
+          color: "#0A1A40",
+          textAlign: "center",
+          marginTop: "3rem",
+        }}
+      >
+        {selectedTipo ? `Categorías de ${selectedTipo}` : "Todas las Categorías"}
+      </h2>
+
+      {/* Lista de categorías filtradas */}
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: "2rem",
+          marginTop: "1.5rem",
+        }}
+      >
+        {categoriasFiltradas.map(cat => (
+          <CategoryCard
+            key={cat.id}
+            nombre={cat.nombre}
+            descripcion={cat.descripcion}
+            imagen={cat.imagen}
+            marcas={cat.marcas_recomendadas}
+          />
+        ))}
+      </div>
     </div>
   );
 }
